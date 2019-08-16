@@ -11,21 +11,21 @@ int main(int argc, char *argv[])
 		scanf("%d", &nombreMystere);
 	}
 
-	while nombreEntre != nombreMystere
+	while (nombreEntre != nombreMystere)
 	{
 		printf("Quel est le nombre mystere ?");
-		scanf("%d", &nombreEntre)
-	if (nombreEntre < nombreMystere)
-	{
-		printf("c'est plus !\n");
-	}
-	else if (nombreEntre > nombreMystere)
-	{
-		printf("C'est moins !\n");
-	}
-	else 
-	{
-		printf("Bravo, vous avez trouvé le nombre mystere !\n");
+		scanf("%d", &nombreEntre);
+		
+		if (nombreEntre < nombreMystere)
+			printf("c'est plus !\n");
+
+		else if (nombreEntre > nombreMystere)
+			printf("C'est moins !\n");
+
+		else 
+			printf("Bravo, vous avez trouvé le nombre mystere !\n");
+
+		return 0;
 	}
 
-	}
+}
